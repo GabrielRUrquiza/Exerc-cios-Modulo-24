@@ -1,0 +1,25 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "Exercicios",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js",
+    "test:gql": "mocha ./test/graphql/**/*.test.js",
+    "test:rest": "mocha ./test/api/**/*.test.js",
+    "test:contractProvider": "mocha ./test/contract/loginProvider.test.js",
+    "test:contractConsumer": "mocha ./test/contract/loginConsumer.test.js"
+  },
+  "keywords": [],
+  "author": "Gabriel Rodrigues Urquiza",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.3.0",
+    "pactum": "^3.6.0"
+  },
+  "dependencies": {
+    "cypress": "^15.0.0",
+    "pactum-flow-plugin": "^0.1.4",
+    "pactum-matchers": "^1.1.6"
+  }
+}
